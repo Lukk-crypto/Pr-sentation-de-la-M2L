@@ -28,3 +28,9 @@ th {
     background-color: darkgrey;
     color: white;
 }
+ .logo {
+  float: left;        /* L’image se place à gauche */
+  margin-right: 20px; /* Espace entre l’image et le texte */
+  height: 90px;   /* Réduit la hauteur */
+  width: auto;    /* Garde les proportions */
+}
