@@ -6,25 +6,11 @@ body {
     margin-left: 50px;
 }
 
-/* -- visualisation des bordures de tableau -- */
 
-table, th, td {
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    border-collapse: collapse;
-}
 
-/* -- espacement et alignement dans les cellules -- */
-
-th, td {
-    padding: 5px;
-    text-align: center;
-}
-
-/* -- Entête en inverse grisé -- */
-
-th {
-    background-color: darkgrey;
-    color: white;
+ .logo {
+  float: left;        /* L’image se place à gauche */
+  margin-right: 20px; /* Espace entre l’image et le texte */
+  height: 90px;   /* Réduit la hauteur */
+  width: auto;    /* Garde les proportions */
 }
