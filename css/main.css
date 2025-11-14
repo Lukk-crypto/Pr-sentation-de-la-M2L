@@ -1,36 +1,93 @@
-@charset "utf-8";
-/* main.css */
+:root{
+  --text:#e5e7eb;
+  --muted:#9aa3b2;
+  --bg:#0b0f14;
+  --panel:#11161d;
+  --panel2:#151b23;
+  --border:#1f2732;
+  --accent:#6aa8ff;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --maxw:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 50px;
+/* Topbar sombre quasi noire */
+.topbar.dark{
+  position:fixed; top:0; left:0; right:0; z-index:30;
+  background:rgba(0,0,0,.88);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  backdrop-filter:saturate(120%) blur(8px);
+}
+.topbar .bar-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 18px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img.logo{height:40px;width:auto}
+.brand .site-name{font-size:1.05rem;margin:0;color:#fff;letter-spacing:.2px}
+.topnav{display:flex;gap:10px;flex-wrap:wrap}
+.btn-nav{
+  display:inline-block; padding:10px 18px; font-size:1rem;
+  border-radius:14px; border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06); color:#fff;
+  transition:transform .12s ease, background .2s ease, box-shadow .2s ease;
+}
+.btn-nav:hover{transform:translateY(-1px); background:rgba(255,255,255,.16); text-decoration:none; box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.btn-nav.active{background:rgba(255,255,255,.22)}
+
+/* HERO plein écran */
+.hero-full{ position:relative; height:100vh; width:100%; background:url('images/hero-karate.jpg') center/cover no-repeat fixed; }
+.hero-full::before{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.55)); }
+.hero-content{ position:absolute; inset:0; display:grid; place-items:center; text-align:center; padding:0 24px; }
+.hero-title{ font-size:clamp(2rem,6vw,4rem); font-weight:800; color:#fff; letter-spacing:.5px; margin:0 }
+.hero-sub{ color:var(--muted); margin-top:10px }
+.hero-cta{ margin-top:22px; display:inline-block; padding:12px 18px; border-radius:14px; border:1px solid rgba(255,255,255,.18); color:#fff; background:rgba(255,255,255,.10) }
+.hero-cta:hover{ background:rgba(255,255,255,.18); text-decoration:none }
+
+/* Contenu sous le hero */
+.main-wrap{ max-width:var(--maxw); margin:-60px auto 24px; padding:0 18px; }
+.layout{ display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:24px; }
+
+.content section{ background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px 20px; margin:16px 0; scroll-margin-top:120px }
+.content h2{ margin:0 0 10px 0; font-size:1.22rem; color:#fff; position:relative; padding-bottom:8px }
+.content h2::after{ content:""; position:absolute; left:0; bottom:0; width:72px; height:3px; border-radius:4px; background:linear-gradient(90deg,#9fc3ff,#578bff) }
+.content p, .content li, td{ color:#d4d8de }
+.photo{ margin-top:12px; border-radius:14px; border:1px solid var(--border); box-shadow:var(--shadow) }
+
+/* Menu déroulable à droite */
+/* --- Correction du menu latéral --- */
+.sidebar-right {
+  position: sticky;
+  top: 84px;
+  height: fit-content;
+  transform: none;              /* Supprime le décalage à droite */
+  width: 280px;                 /* Réduit la largeur */
+  margin-left: auto;            /* L'aligne proprement à droite */
 }
 
-/* -- visualisation des bordures de tableau -- */
-
-table, th, td {
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    border-collapse: collapse;
+.sidebar-right details {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 12px;
+  width: 100%;
 }
 
-/* -- espacement et alignement dans les cellules -- */
+/* Tables */
+.table-wrap{ overflow-x:auto }
+table{ width:100%; border-collapse:collapse; background:var(--panel2); border:1px solid var(--border); border-radius:12px; overflow:hidden }
+th,td{ padding:12px 14px; text-align:left; border-bottom:1px solid var(--border) }
+th{ background:#171e27; font-weight:700; color:#e0e6ee }
+tr:nth-child(even) td{ background:#141b23 }
 
-th, td {
-    padding: 5px;
-    text-align: center;
-}
+/* Footer */
+footer{ color:var(--muted); text-align:center; padding:24px 16px 40px }
 
-/* -- Entête en inverse grisé -- */
-
-th {
-    background-color: darkgrey;
-    color: white;
-}
- .logo {
-  float: left;        /* L’image se place à gauche */
-  margin-right: 20px; /* Espace entre l’image et le texte */
-  height: 90px;   /* Réduit la hauteur */
-  width: auto;    /* Garde les proportions */
+@media (max-width: 1024px){
+  .layout{ grid-template-columns:1fr }
+  .sidebar-right{ position:static; transform:none }
 }
