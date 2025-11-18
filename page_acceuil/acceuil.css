@@ -2,7 +2,7 @@
   position:relative;
   height:100vh;
   width:100%;
-  background:url('../images/hero-karate.jpg') center/cover no-repeat fixed;
+  background:url('../images/fond_sport.png') center/cover no-repeat fixed;
 }
 .hero-full::before{
   content:"";
