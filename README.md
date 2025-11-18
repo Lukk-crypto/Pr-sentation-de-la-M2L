@@ -46,5 +46,4 @@ Il s'agit d'un site statique. Pour le visualiser :
 2.  Ouvrez le fichier `page_acceuil/index.html` dans votre navigateur.
 
 ---
-**Auteur :** [Ton Prénom] [TON NOM]
 **Promo :** BTS SIO 2025
