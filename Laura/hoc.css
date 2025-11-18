@@ -1,0 +1,44 @@
+.hero-full{
+  position:relative;
+  height:100vh;
+  width:100%;
+  background:url('../images/hockey.jpg') center/cover no-repeat fixed;
+}
+.hero-full::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.55));
+}
+.hero-content{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:0 24px;
+}
+.hero-title{
+  font-size:clamp(2rem,6vw,4rem);
+  font-weight:800;
+  color:#fff;
+  letter-spacing:.5px;
+  margin:0;
+}
+.hero-sub{
+  color:var(--muted);
+  margin-top:10px;
+}
+.hero-cta{
+  margin-top:22px;
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.18);
+  color:#fff;
+  background:rgba(255,255,255,.10);
+}
+.hero-cta:hover{
+  background:rgba(255,255,255,.18);
+  text-decoration:none;
+}
