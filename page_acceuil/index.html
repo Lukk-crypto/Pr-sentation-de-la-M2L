@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr"><head><title>Accueil – Maison des Ligues</title><meta charset="UTF-8">
+<html lang="fr">
+<head>
+  <title>Accueil – Maison des Ligues</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/main.css"><link rel="icon" href="../images/favicon.ico">
-  <link rel="stylesheet" href="acceuil.css">
+  
+  <link rel="stylesheet" href="../css/main.css"> <link rel="stylesheet" href="acceuil.css">    <link rel="icon" href="../images/favicon.ico">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
   
 <body>
@@ -14,22 +19,160 @@
       <h1 class="site-name">Maison des Ligues</h1>
     </div>
     <nav class="topnav">
-      <a class="btn-nav active" href="../page_acceuil/index.html">Page principale</a>
-      <a class="btn-nav" href="../Laura/hockey.html">Hokay</a>
+      <a class="btn-nav active" href="#">Accueil</a>
+      <a class="btn-nav" href="../Laura/hockey.html">Hockey</a>
       <a class="btn-nav" href="../karate/karate.html">Karaté</a>
-      <a class="btn-nav" href="../Rafé/rugby.html">Rugby à 15</a>
+      <a class="btn-nav" href="../Rafé/rugby.html">Rugby</a>
     </nav>
   </div>
 </header>
 
 <section class="hero-full">
+  <div class="hero-overlay"></div>
+  
   <div class="hero-content">
-    <div>
-      <h2 class="hero-title">Maison des Ligues</h2>
-      <p class="hero-sub">Choisis un sport avec les boutons en haut.</p>
-      <a class="hero-cta" href="../karate/karate.html">Voir la page Karaté</a>
+    
+    <div class="hero-text-side">
+        <h2 class="hero-title">CHOISIS<br>TON CAMP !</h2>
+        <div class="separator-bar"></div>
+        <p class="hero-sub">Bienvenue à la Maison des Ligues.<br>Sélectionne ton sport ou consulte le dossier.</p>
+        <a href="#contenu-m2l" class="info-btn">Voir le dossier M2L ▼</a>
+    </div>
+
+    <div class="hero-menu-side">
+      
+      <a href="../Rafé/rugby.html" class="menu-item rugby-style">
+        <div class="item-text">
+            <h3>RUGBY</h3>
+            <span>Force & Impact</span>
+        </div>
+        <div class="item-arrow">➤</div>
+      </a>
+
+      <a href="../Laura/hockey.html" class="menu-item hockey-style">
+        <div class="item-text">
+            <h3>HOCKEY</h3>
+            <span>Vitesse & Glace</span>
+        </div>
+        <div class="item-arrow">➤</div>
+      </a>
+
+      <a href="../karate/karate.html" class="menu-item karate-style">
+        <div class="item-text">
+            <h3>KARATÉ</h3>
+            <span>Maîtrise & Esprit</span>
+        </div>
+        <div class="item-arrow">➤</div>
+      </a>
+
     </div>
   </div>
 </section>
-<footer><p>© 2025 Maison des Ligues</p></footer>
-</body></html>
+
+<main class="main-wrap" id="contenu-m2l">
+  <div class="layout">
+    
+    <div class="content">
+      
+      <section id="mission">
+        <h2>Missions de la structure</h2>
+        <p>La Maison des Ligues a pour mission de fournir aux structures sportives régionales les moyens de se développer et de performer. Nous assurons la gestion, l'organisation et la coordination des ligues à travers la région.</p>
+        <p><strong>Objectif :</strong> Mutualiser les ressources pour optimiser la performance.</p>
+      </section>
+
+      <section id="financement">
+        <h2>Financement</h2>
+        <p>Le fonctionnement de la M2L repose sur des sources variées :</p>
+        <ul>
+          <li>Subventions du Conseil Régional.</li>
+          <li>Partenariats privés et sponsors.</li>
+          <li>Cotisations annuelles des ligues affiliées.</li>
+        </ul>
+      </section>
+
+      <section id="services">
+        <h2>Services Proposés</h2>
+        <p>Nous offrons un arsenal complet de services administratifs :</p>
+        <ul>
+          <li><strong>Gestion Juridique :</strong> Aide à la rédaction de contrats.</li>
+          <li><strong>Comptabilité :</strong> Gestion de trésorerie et bilans.</li>
+          <li><strong>Informatique :</strong> Hébergement web et maintenance réseau.</li>
+          <li><strong>Reprographie :</strong> Impression de documents.</li>
+        </ul>
+      </section>
+
+      <section id="bureaux">
+        <h2>Correspondance des Bureaux</h2>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Bâtiment</th>
+              <th>Bureau</th>
+              <th>Ligue Assignée</th>
+              <th>Responsable</th>
+            </tr>
+            <tr>
+              <td>A - Alpha</td>
+              <td>101</td>
+              <td>Rugby</td>
+              <td>Marc S.</td>
+            </tr>
+            <tr>
+              <td>A - Alpha</td>
+              <td>102</td>
+              <td>Karaté</td>
+              <td>John D.</td>
+            </tr>
+            <tr>
+              <td>B - Bêta</td>
+              <td>204</td>
+              <td>Hockey</td>
+              <td>Laura T.</td>
+            </tr>
+            <tr>
+              <td>C - Gamma</td>
+              <td>301</td>
+              <td>Administration</td>
+              <td>Lucien B.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section id="directeur">
+        <h2>Direction de la Ligue</h2>
+        <div class="coaches-grid">
+          <div class="coach-card">
+            <img src="../images/lucien_rebiron.jpg" alt="Directeur M2L">
+            <div class="coach-name">M. Lucien BRIMBORION</div>
+            <div class="coach-role">Directeur Général</div>
+            <p style="margin-top:10px; font-size:0.9rem; color:#ccc;">
+               Email : directeur@m2l.fr<br>
+               Tél : 05.61.00.00.01
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div> <aside class="sidebar-right">
+      <details open>
+        <summary>Dossier M2L</summary>
+        <nav class="side-nav">
+          <a href="#mission">Missions</a>
+          <a href="#financement">Financement</a>
+          <a href="#services">Services</a>
+          <a href="#bureaux">Bureaux</a>
+          <a href="#directeur">Contact Directeur</a>
+        </nav>
+      </details>
+    </aside>
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Maison des Ligues // Mission WEB-M2L</p>
+</footer>
+
+</body>
+</html>
