@@ -6,7 +6,7 @@
 > Conception d'un portail web pour les ligues sportives régionales.
 
 <div align="center">
-  <a href="https://lukk-crypto.github.io/Pr-sentation-de-la-M2L/" target="_blank">
+  <a href="https://lukk-crypto.github.io/Pr-sentation-de-la-M2L/page_acceuil/" target="_blank">
     Voir le site M2L
   </a>
 </div>
