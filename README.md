@@ -6,7 +6,7 @@
 > Conception d'un portail web pour les ligues sportives régionales.
 
 <div align="center">
-  <img src="images/capture_site.jpg" alt="Aperçu du site M2L" width="800">
+  <img src="https://lukk-crypto.github.io/Pr-sentation-de-la-M2L/page_acceuil/" alt="Aperçu du site M2L" width="800">
 </div>
 
 ## 🎨 Concept & Design
