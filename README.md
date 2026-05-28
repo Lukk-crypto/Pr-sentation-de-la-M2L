@@ -12,10 +12,10 @@
 </div>
 
 ## 🎨 Concept & Design
-Ce projet se démarque par une direction artistique audacieuse inspirée de l'univers du jeu vidéo **Borderlands** (Cel-shading, polices impactantes, menus en split-screen), tout en respectant une structure d'information professionnelle.
+Ce projet se démarque par une direction artistique audacieuse, tout en respectant une structure d'information professionnelle.
 
 ## 🛠️ Technologies utilisées
-* **HTML5** : Structure sémantique (Header, Nav, Section, Article, Aside).
+* **HTML5** : Structure sémantique.
 * **CSS3** :
     * Mise en page : **Flexbox** & **Grid**.
     * Variables CSS (`:root`) pour la gestion des thèmes.
@@ -25,7 +25,7 @@ Ce projet se démarque par une direction artistique audacieuse inspirée de l'un
 ## 📂 Contenu du site
 
 ### 1. Page d'accueil (Hub)
-* Menu de sélection dynamique (Split Screen).
+* Menu de sélection dynamique.
 * Présentation de la structure M2L (Missions, Financement, Services).
 * Tableau de correspondance des bureaux.
 * Fiche contact du Directeur.
@@ -38,7 +38,7 @@ Des pages dédiées pour chaque discipline avec navigation par ancres :
 
 Chaque page contient :
 * Historique et Règles.
-* Présentation des entraîneurs (Cartes).
+* Présentation des entraîneurs.
 * Tableaux des catégories et calendrier des matchs.
 * Lieux et horaires d'entraînement.
 
